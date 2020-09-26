@@ -7,6 +7,7 @@ class Drop_In_Center extends CI_Controller{
   public function index(){
 
     //get listing data
+    $data['listingData'] = array();
     $listingData = $this->getListingData();
 
     $data['listingData'] = $listingData;
@@ -35,7 +36,6 @@ class Drop_In_Center extends CI_Controller{
     $res = json_decode($rest,true);
 
     $msg = $res['message'];
-
     if($msg == 'success'){
       return $res['drop_in_navigator_list'];
     }else{

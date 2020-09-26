@@ -71,7 +71,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo base_url('index.php/login/kit_request'); ?>" class="waves-effect">
+                                <a href="<?php echo base_url('index.php/Drop_In_Center'); ?>" class="waves-effect">
                                     <i class="remixicon-dashboard-line"></i>
                                     <span> Drop-In Center </span>
                                 </a>

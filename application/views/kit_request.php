@@ -1,4 +1,5 @@
 <?php require_once('header.php'); ?>
+<?php if( empty($listingData)){ $listingData = array( ); } ?>
     <!-- Begin page -->
     <div id="wrapper">
 
@@ -70,7 +71,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php echo base_url('index.php/login/kit_request'); ?>" class="waves-effect">
+                            <a href="<?php echo base_url('index.php/Drop_In_Center'); ?>" class="waves-effect">
                                 <i class="remixicon-dashboard-line"></i>
                                 <span> Drop-In Center </span>
                             </a>
@@ -147,7 +148,7 @@
 
                                         $i = 0;
 
-                                        if(!empty($listingData)){
+                                        if($listingData){
 
                                           foreach($listingData as $data){
 
